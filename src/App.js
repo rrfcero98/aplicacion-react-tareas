@@ -1,8 +1,6 @@
 import './App.css';
 import ListaDeTareas from './components/ListaDeTareas';
 import Logo from './components/Logo';
-import Tarea from './components/Tarea';
-import TareaFormulario from './components/TareaFormulario';
 
 function App() {
   return (
