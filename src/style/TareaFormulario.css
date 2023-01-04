@@ -22,10 +22,11 @@
   font-size: 18px;
   font-family: Roboto, sans-serif;
   border: none;
-  border-radius: 0 4px 4px 0;
+  border-radius: 4px;
   cursor: pointer;
   outline: none;
   background-color: #00471b;
   color: white;
-  text-transform: capitalize;
+  text-transform: capitalize; /* Pone en mayúscula la primer letra de cada palabra */
+  margin-left: 5px;
 }
