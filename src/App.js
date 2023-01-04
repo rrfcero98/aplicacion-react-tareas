@@ -8,7 +8,8 @@ function App() {
       <Logo />
       <div className='tareas-lista-principal'>
         <h1>Mis tareas</h1>
-        <Tarea texto='Esto es la primer tarea' />
+        <Tarea texto='Esto es la primer tarea' completada={true} />
+        <Tarea texto='Esto es la segunda tarea' completada={false} />
       </div>
     </div>
   );

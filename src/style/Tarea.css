@@ -9,20 +9,32 @@
   align-items: center;
   border-radius: 7px;
   border: 1px solid white;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .tarea-texto {
-  width: 100%;
+  width: 80%;
   height: 100%;
   font-size: 20px;
   display: flex;
   align-items: center;
+  cursor: pointer;
   overflow-wrap: anywhere; /*Si el texto de la tarea es largo este será cortado y continuará abajo, es decir se expande verticalmente*/
 }
+
+/* .tarea-contendor-iconos {
+
+} */
+
 
 .tarea-icono {
   width: 25px;
   height: 25px;
-  margin: 5px;
+  cursor: pointer;
+}
+
+/* Tarea completada */
+.tarea-contenedor.completada {
+  background-color: #5a01a7;
+  text-decoration: line-through;
 }
