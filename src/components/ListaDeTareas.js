@@ -23,6 +23,16 @@ function ListaDeTareas() {
     setTareas(tareasActualizadas); 
   }
 
+  const completarTarea = id => {
+    const tareasActualizadas = tareas.map(tarea => {
+      if (tarea.id === id) {
+        tarea.completada = !tarea.completada; //Invierte el estado de la completada
+      }
+      return tarea;
+    });
+    setTareas(tareasActualizadas);
+  }
+
   return (
     //Un componente no puede tener más de un div al mismo nivel
     //Los fragmentos <></> en react sirven solo para mantener un orden en el código y a la hora de compilar desaparacen
@@ -39,6 +49,7 @@ function ListaDeTareas() {
               texto={tarea.texto}
               completada={tarea.completada}
               eliminarTarea={eliminarTarea}
+              completarTarea={completarTarea}
             />
           )
         }
