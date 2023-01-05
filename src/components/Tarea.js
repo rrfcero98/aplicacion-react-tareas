@@ -12,7 +12,7 @@ function Tarea({ id, texto, completada, completarTarea, eliminarTarea }) {
       </div>
       <div 
         className="tarea-contendor-iconos"
-        onClick={ () => eliminarTarea }>
+        onClick={ () => eliminarTarea(id) }>
         <AiOutlineCloseCircle className="tarea-icono" /> {/* Se agrega el icono como un componente de React */}
       </div>
     </div>

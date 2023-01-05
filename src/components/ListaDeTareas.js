@@ -7,8 +7,7 @@ function ListaDeTareas() {
 
   const [tareas, setTareas] = useState([]);
 
-  const agregarTarea = tarea => {
-        
+  const agregarTarea = tarea => {   
     if (tarea.texto.trim()) {
       tarea.texto = tarea.texto.trim();
       
@@ -17,8 +16,12 @@ function ListaDeTareas() {
     } else {
       alert('La tarea está vacía');
     }
-
   };
+
+  const eliminarTarea = id => {
+    const tareasActualizadas = tareas.filter(tarea => tarea.id !== id);
+    setTareas(tareasActualizadas); 
+  }
 
   return (
     //Un componente no puede tener más de un div al mismo nivel
@@ -35,6 +38,7 @@ function ListaDeTareas() {
               id={tarea.id}
               texto={tarea.texto}
               completada={tarea.completada}
+              eliminarTarea={eliminarTarea}
             />
           )
         }
