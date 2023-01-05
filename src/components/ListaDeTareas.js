@@ -21,7 +21,7 @@ function ListaDeTareas() {
   const eliminarTarea = id => {
     const tareasActualizadas = tareas.filter(tarea => tarea.id !== id);
     setTareas(tareasActualizadas); 
-  }
+  };
 
   const completarTarea = id => {
     const tareasActualizadas = tareas.map(tarea => {
@@ -31,7 +31,7 @@ function ListaDeTareas() {
       return tarea;
     });
     setTareas(tareasActualizadas);
-  }
+  };
 
   return (
     //Un componente no puede tener más de un div al mismo nivel

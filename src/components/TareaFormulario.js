@@ -9,7 +9,7 @@ function TareaFormulario(props) {
   const manejarCambio = e =>{
     console.log('Escribiendo...');
     setInput(e.target.value); //Extrayendo el texto ingresado por el usuario
-  }
+  };
 
   const manejarEnvio = e => {
     e.preventDefault(); //Evitar que se cargue toda la aplicación cuando se envía el formulario
@@ -23,7 +23,7 @@ function TareaFormulario(props) {
 
     console.log(tareaNueva); 
     props.onSubmit(tareaNueva);  
-  }
+  };
 
     return(
       <form 
